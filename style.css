@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: flex;
+}
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 150px;
+  height: 100px;
+}
+#rate,
+.datepicker {
+  width: 100px;
+}
+.result {
+  width: 400px;
+}
+#rate-result {
+  width: 100%;
+  margin: 0px 20px;
+  border-collapse: collapse;
+  border: 1px solid #333333;
+}
+tr {
+  color: #333333;
+  padding: 5px;
+}
+th {
+  background-color: hsl(0, 0%, 51%);
+  margin: 0px;
+  border-spacing: 0px;
+  color: #f3f3f3;
+  border: 1px solid #333333;
+}
+th,
+td {
+  padding: 5px;
+  border-left: 1px solid #333333;
+  border-right: 1px solid #333333;
+}
+tr:nth-child(odd) {
+  background: #f3f3f3;
+}
+tr:nth-child(even) {
+  background: #b1afaf;
+}
+.buy,
+.sell {
+  text-align: right;
+}

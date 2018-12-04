@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="vanilla.datepicker.css" />
+    <script src="vanilla.datepicker.js"></script>
+    <title>Exchange Rates</title>
+  </head>
+  <body>
+    <h1>Exchange rates</h1>
+
+    <div class="container">
+      <div class="filter">
+        <div>
+          <label for="rate">Base:</label>
+          <select name="rate" id="rate"></select>
+        </div>
+        <div>
+          <label for="datepicker">Date:</label>
+          <input type="text" class="datepicker" name="datepicker" />
+        </div>
+        <button id="submit" type="submit">show</button>
+      </div>
+      <div class="result">
+        <table id="rate-result">
+          <tr>
+            <th class="currency" onclick="sort()">Currency &#8645</th>
+            <th>Buy</th>
+            <th>Sell</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      datepicker(".datepicker", {
+        firstDayOfWeek: 1,
+        months: {
+          short: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "June",
+            "July",
+            "Aug",
+            "Sept",
+            "Oct",
+            "Nov",
+            "Dec"
+          ],
+          long: [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+          ]
+        },
+        weekdays: {
+          short: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+          long: [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ]
+        }
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
